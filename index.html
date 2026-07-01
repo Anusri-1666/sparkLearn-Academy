@@ -1,31 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<title>SparkLearn</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SparkLearn Academy</title>
 <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
+<!-- SPLASH SCREEN -->
 <div id="splash">
   <img src="images/logo.png">
 </div>
 
+<!-- TOP BAR (LOGO AFTER SPLASH) -->
+<div class="topbar">
+  <img src="images/logo.png" class="small-logo">
+  <h2>SparkLearn Academy</h2>
+</div>
+
+<!-- MAIN APP -->
 <div class="app">
 
+  <!-- SIDEBAR -->
   <div class="sidebar">
-    <h2>SparkLearn</h2>
-
     <a onclick="showPage('home')">Home</a>
     <a onclick="showPage('about')">About</a>
     <a onclick="showPage('courses')">Courses</a>
     <a onclick="showPage('contact')">Contact</a>
   </div>
 
+  <!-- CONTENT -->
   <div class="content">
 
+    <!-- HOME -->
     <div id="home" class="page active">
-      <h1>Welcome</h1>
+
+      <h1>Welcome 🚀</h1>
 
       <div class="gallery">
         <img src="images/campus.png">
@@ -34,34 +47,67 @@
         <img src="images/faculty.png">
       </div>
 
+      <p style="margin-top:20px;">
+        Scroll down 👇
+      </p>
+
+      <!-- LOGIN SECTION (BOTTOM) -->
       <div class="login-section">
-        <h2>Login</h2>
-        <input placeholder="Username">
-        <input placeholder="Password">
+        <h2>Login / Register</h2>
+
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+
         <button>Login</button>
-        <button>Register</button>
+        <button class="register">Register</button>
       </div>
+
     </div>
 
+    <!-- ABOUT -->
     <div id="about" class="page">
-      <h1>About</h1>
-      <p>We teach skills.</p>
+      <h1>About Us</h1>
+
+      <p>
+        SparkLearn Academy is a modern learning platform focused on practical skills and career development.
+        We help students gain real-world knowledge through hands-on projects and simple explanations.
+      </p>
+
+      <p>
+        Our mission is to make education easy, affordable, and industry-ready for everyone.
+      </p>
     </div>
 
+    <!-- COURSES -->
     <div id="courses" class="page">
-      <h1>Courses</h1>
-      <p>Full Stack, Python, AI</p>
+      <h1>Our Courses</h1>
+
+      <div class="card">
+        <h3>Full Stack Development</h3>
+        <p>Learn HTML, CSS, JavaScript, React and Node.js to build real-world web applications.</p>
+      </div>
+
+      <div class="card">
+        <h3>Python Programming</h3>
+        <p>From basics to advanced Python with projects, logic building and problem solving.</p>
+      </div>
+
+      <div class="card">
+        <h3>Data Science</h3>
+        <p>Learn AI, Machine Learning and data analysis using practical examples.</p>
+      </div>
+
     </div>
 
+    <!-- CONTACT -->
     <div id="contact" class="page">
       <h1>Contact</h1>
-      <p>+91 98765 43210</p>
+      <p>📞 +91 98765 43210</p>
     </div>
 
   </div>
 </div>
 
 <script src="script.js"></script>
-
 </body>
 </html>
