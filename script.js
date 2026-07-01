@@ -1,111 +1,77 @@
-// =========================
-// SparkLearn Academy
-// JavaScript
-// =========================
+// ===============================
+// SparkLearn Academy - Script.js
+// ===============================
 
-// Welcome Message
-window.onload = function () {
-    console.log("Welcome to SparkLearn Academy!");
-};
 
-// =========================
-// Contact Form Validation
-// =========================
-
-function validateContactForm() {
-
-    let name = document.getElementById("name").value.trim();
-    let email = document.getElementById("email").value.trim();
-    let phone = document.getElementById("phone").value.trim();
-    let message = document.getElementById("message").value.trim();
-
-    if(name === ""){
-        alert("Please enter your name.");
-        return false;
-    }
-
-    if(email === ""){
-        alert("Please enter your email.");
-        return false;
-    }
-
-    if(phone === ""){
-        alert("Please enter your phone number.");
-        return false;
-    }
-
-    if(message === ""){
-        alert("Please enter your message.");
-        return false;
-    }
-
-    alert("Message submitted successfully!");
-
-    return true;
+// 🔹 1. Mobile Navigation Toggle (if you add hamburger menu later)
+function toggleMenu() {
+  const nav = document.querySelector(".nav-links");
+  nav.classList.toggle("active");
 }
 
-// =========================
-// Login Validation
-// =========================
 
-function validateLogin(){
+// 🔹 2. Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
 
-    let email = document.getElementById("loginEmail").value.trim();
-    let password = document.getElementById("loginPassword").value.trim();
+    const target = document.querySelector(this.getAttribute("href"));
 
-    if(email === ""){
-        alert("Please enter your email.");
-        return false;
+    if (target) {
+      target.scrollIntoView({
+        behavior: "smooth"
+      });
     }
+  });
+});
 
-    if(password === ""){
-        alert("Please enter your password.");
-        return false;
+
+// 🔹 3. Form validation (Contact / Register / Login)
+document.addEventListener("DOMContentLoaded", function () {
+
+  const forms = document.querySelectorAll("form");
+
+  forms.forEach(form => {
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      const inputs = form.querySelectorAll("input");
+      let valid = true;
+
+      inputs.forEach(input => {
+        if (input.value.trim() === "") {
+          valid = false;
+          input.style.border = "2px solid red";
+        } else {
+          input.style.border = "2px solid green";
+        }
+      });
+
+      if (!valid) {
+        alert("⚠ Please fill all fields correctly");
+      } else {
+        alert("✅ Form submitted successfully!");
+        form.reset();
+      }
+    });
+  });
+});
+
+
+// 🔹 4. Simple fade-in animation on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show");
     }
+  });
+});
 
-    alert("Login Successful!");
+document.querySelectorAll("section, .card").forEach(el => {
+  el.classList.add("hidden");
+  observer.observe(el);
+});
 
-    return true;
-}
 
-// =========================
-// Registration Validation
-// =========================
-
-function validateRegister(){
-
-    let name = document.getElementById("regName").value.trim();
-    let email = document.getElementById("regEmail").value.trim();
-    let phone = document.getElementById("regPhone").value.trim();
-    let password = document.getElementById("regPassword").value;
-    let confirm = document.getElementById("confirmPassword").value;
-
-    if(name === ""){
-        alert("Enter your full name.");
-        return false;
-    }
-
-    if(email === ""){
-        alert("Enter your email.");
-        return false;
-    }
-
-    if(phone.length != 10){
-        alert("Enter a valid 10-digit phone number.");
-        return false;
-    }
-
-    if(password === ""){
-        alert("Enter a password.");
-        return false;
-    }
-
-    if(password !== confirm){
-        alert("Passwords do not match.");
-        return false;
-    }
-
-    alert("Registration Successful!");
-
-    return true;
-}
+// 🔹 5. Console message
+console.log("🚀 SparkLearn Academy JS loaded successfully!");
