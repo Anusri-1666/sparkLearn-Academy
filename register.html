@@ -1,178 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Register | SparkLearn Academy</title>
-
-<meta name="description"
-content="Student Registration - SparkLearn Academy">
-
-<meta name="keywords"
-content="Student Registration, SparkLearn Academy">
-
+<title>Courses | SparkLearn Academy</title>
 <link rel="stylesheet" href="css/style.css">
-
 </head>
 
 <body>
 
 <header>
-
 <nav class="navbar">
-
 <div class="logo">
-
+<img src="images/logo.png" alt="Logo">
 <h2>Spark<span>Learn</span></h2>
-
 </div>
 
 <ul class="nav-links">
-
 <li><a href="index.html">Home</a></li>
-
 <li><a href="about.html">About</a></li>
-
-<li><a href="courses.html">Courses</a></li>
-
+<li><a href="courses.html" class="active">Courses</a></li>
 <li><a href="gallery.html">Gallery</a></li>
-
 <li><a href="contact.html">Contact</a></li>
-
-<li><a href="login.html">Login</a></li>
-
-<li><a href="register.html" class="active register-btn">Register</a></li>
-
 </ul>
-
 </nav>
-
 </header>
 
 <section>
+<h1>Our Courses</h1>
 
-<h1 style="text-align:center;color:#2563EB;">
-Student Registration
-</h1>
+<div class="card-container">
 
-<p style="text-align:center;margin-bottom:40px;">
-Join SparkLearn Academy and start your learning journey today.
-</p>
-
-<div style="max-width:650px;margin:auto;background:#fff;padding:30px;border-radius:10px;box-shadow:0 5px 20px rgba(0,0,0,.1);">
-
-<form onsubmit="return validateRegister();">
-
-<label><strong>Full Name</strong></label><br><br>
-
-<input
-type="text"
-id="regName"
-placeholder="Enter your full name"
-style="width:100%;padding:12px;"><br><br>
-
-<label><strong>Email Address</strong></label><br><br>
-
-<input
-type="email"
-id="regEmail"
-placeholder="Enter your email"
-style="width:100%;padding:12px;"><br><br>
-
-<label><strong>Phone Number</strong></label><br><br>
-
-<input
-type="text"
-id="regPhone"
-placeholder="Enter your 10-digit phone number"
-style="width:100%;padding:12px;"><br><br>
-
-<label><strong>Date of Birth</strong></label><br><br>
-
-<input
-type="date"
-style="width:100%;padding:12px;"><br><br>
-
-<label><strong>Select Course</strong></label><br><br>
-
-<select style="width:100%;padding:12px;">
-
-<option>Full Stack Web Development</option>
-<option>Python Programming</option>
-<option>Java Programming</option>
-<option>Artificial Intelligence</option>
-<option>Data Science</option>
-<option>Graphic Design</option>
-<option>Digital Marketing</option>
-<option>Spoken English</option>
-
-</select>
-
-<br><br>
-
-<label><strong>Password</strong></label><br><br>
-
-<input
-type="password"
-id="regPassword"
-placeholder="Create a password"
-style="width:100%;padding:12px;"><br><br>
-
-<label><strong>Confirm Password</strong></label><br><br>
-
-<input
-type="password"
-id="confirmPassword"
-placeholder="Confirm your password"
-style="width:100%;padding:12px;"><br><br>
-
-<button class="btn" type="submit">
-
-Register
-
-</button>
-
-</form>
-
-<br>
-
-<p style="text-align:center;">
-
-Already have an account?
-
-<a href="login.html">
-
-Login Here
-
-</a>
-
-</p>
-
+<div class="card">
+<h3>Full Stack Development</h3>
+<p>HTML, CSS, JS, React, Node.js, MongoDB</p>
 </div>
 
+<div class="card">
+<h3>Python Programming</h3>
+<p>Basics, OOP, Projects, Automation</p>
+</div>
+
+<div class="card">
+<h3>Data Science</h3>
+<p>ML, AI, Data Analysis, Visualization</p>
+</div>
+
+<div class="card">
+<h3>UI/UX Design</h3>
+<p>Figma, Design Principles, Prototyping</p>
+</div>
+
+</div>
 </section>
 
 <footer>
-
-<p>
-
-© 2026 SparkLearn Academy. All Rights Reserved.
-
-</p>
-
-<p>
-
-This website is a fictional academic project created for educational purposes only.
-
-</p>
-
+<p>© 2026 SparkLearn Academy</p>
 </footer>
 
 <script src="js/script.js"></script>
-
 </body>
-
 </html>
