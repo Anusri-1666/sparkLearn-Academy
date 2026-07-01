@@ -1,24 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SparkLearn Academy</title>
+<title>SparkLearn</title>
 <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
+
 <body>
 
-<!-- SPLASH -->
 <div id="splash">
-  <img src="images/logo.png" alt="logo">
+  <img src="images/logo.png">
 </div>
 
-<!-- MAIN APP -->
 <div class="app">
 
-  <!-- SIDEBAR -->
   <div class="sidebar">
     <h2>SparkLearn</h2>
 
@@ -28,15 +22,11 @@
     <a onclick="showPage('contact')">Contact</a>
   </div>
 
-  <!-- CONTENT -->
   <div class="content">
 
-    <!-- HOME -->
     <div id="home" class="page active">
+      <h1>Welcome</h1>
 
-      <h1>Welcome 🚀</h1>
-
-      <!-- IMAGES SECTION -->
       <div class="gallery">
         <img src="images/campus.png">
         <img src="images/classroom.png">
@@ -44,54 +34,34 @@
         <img src="images/faculty.png">
       </div>
 
-      <p style="margin-top:20px;">
-        Scroll down to login 👇
-      </p>
-
-      <!-- LOGIN SECTION (BOTTOM OF PAGE) -->
       <div class="login-section">
-
-        <h2>Login / Register</h2>
-
-        <input type="text" placeholder="Username">
-        <input type="password" placeholder="Password">
-
+        <h2>Login</h2>
+        <input placeholder="Username">
+        <input placeholder="Password">
         <button>Login</button>
-        <button class="register">Register</button>
-
+        <button>Register</button>
       </div>
-
     </div>
 
-    <!-- ABOUT -->
     <div id="about" class="page">
-      <h1>About Us</h1>
-      <p>We provide modern learning experience.</p>
+      <h1>About</h1>
+      <p>We teach skills.</p>
     </div>
 
-    <!-- COURSES -->
     <div id="courses" class="page">
       <h1>Courses</h1>
-
-      <div class="card">Full Stack Development</div>
-      <div class="card">Python Programming</div>
-      <div class="card">Data Science</div>
-
+      <p>Full Stack, Python, AI</p>
     </div>
 
-    <!-- CONTACT -->
     <div id="contact" class="page">
       <h1>Contact</h1>
-      <p>📞 +91 987XX XXXXX</p>
+      <p>+91 98765 43210</p>
     </div>
 
   </div>
 </div>
 
 <script src="script.js"></script>
-<!-- MAIN APP -->
-<div id="app">
-  
-<script src="js/script.js"></script>
+
 </body>
 </html>
