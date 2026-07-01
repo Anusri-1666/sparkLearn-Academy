@@ -1,9 +1,20 @@
-// hide splash after 2.5 sec
+// splash
 setTimeout(() => {
 document.getElementById("splash").style.display = "none";
-}, 2500);
+}, 2000);
 
-// hide login after splash + delay
+// login
 setTimeout(() => {
 document.getElementById("login").style.display = "none";
-}, 4500);
+}, 4000);
+
+// dashboard navigation
+function showPage(pageId) {
+
+// hide all pages
+let pages = document.querySelectorAll(".page");
+pages.forEach(p => p.classList.remove("active"));
+
+// show selected page
+document.getElementById(pageId).classList.add("active");
+}
