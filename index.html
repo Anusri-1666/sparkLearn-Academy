@@ -1,62 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SparkLearn Academy</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<!-- SPLASH SCREEN -->
 <div id="splash-screen">
   <img src="images/logo.png" alt="Logo">
 </div>
 
-<header>
-<nav class="navbar">
+<div class="container">
 
-<div class="logo">
-<img src="images/logo.png" alt="Logo">
-<h2>Spark<span>Learn</span></h2>
-</div>
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar">
+    <h2>Spark<span>Learn</span></h2>
 
-<div class="menu-toggle">☰</div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="courses.html">Courses</a>
+    <a href="contact.html">Contact</a>
+  </div>
 
-<ul class="nav-links">
-<li><a href="index.html" class="active">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="courses.html">Courses</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="login.html">Login</a></li>
-<li><a href="register.html" class="register-btn">Register</a></li>
-</ul>
+  <!-- MAIN CONTENT -->
+  <div class="main">
 
-</nav>
-</header>
+    <section class="hero">
+      <h1>Learn Skills That Build Your Future</h1>
+      <p>Join SparkLearn Academy and start your journey today</p>
+    </section>
 
-<section class="hero">
-<h1>Learn Skills That Matter</h1>
-<p>Join SparkLearn Academy and build real-world skills in development, AI, and data science.</p>
-<a href="courses.html" class="btn">Explore Courses</a>
-</section>
+  </div>
 
-<section>
-<h1>Popular Courses</h1>
+  <!-- LOGIN PANEL -->
+  <div class="auth-panel">
+    <h2>Login / Register</h2>
 
-<div class="card-container">
+    <input type="text" placeholder="Username">
+    <input type="password" placeholder="Password">
 
-<div class="card">
-<img src="images/computer-lab.png">
-<h3>Full Stack Development</h3>
-<p>HTML, CSS, JS, React, Node.js</p>
-</div>
-
-<div class="card">
-<img src="images/classroom.png">
-<h3>Python Programming</h3>
-<p>Beginner to Advanced Python</p>
-</div>
-
-<div class="card">
-<img src="images/faculty.png">
-<h3>Data Science</h3>
-<p>AI, ML & Data Analytics</p>
-</div>
+    <button>Login</button>
+    <button class="register">Register</button>
+  </div>
 
 </div>
-</section>
 
-<footer>
-<p>© 2026 SparkLearn Academy</p>
-</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
