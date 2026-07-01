@@ -196,3 +196,39 @@ display: block;
 color: white;
 }
 }
+#splash-screen {
+position: fixed;
+width: 100%;
+height: 100vh;
+background: #111827;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 9999;
+animation: fadeOut 2.5s ease forwards;
+animation-delay: 2s;
+}
+
+#splash-screen img {
+width: 120px;
+height: 120px;
+animation: zoomIn 1s ease;
+}
+
+@keyframes fadeOut {
+to {
+opacity: 0;
+visibility: hidden;
+}
+}
+
+@keyframes zoomIn {
+from {
+transform: scale(0);
+opacity: 0;
+}
+to {
+transform: scale(1);
+opacity: 1;
+}
+}
