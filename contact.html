@@ -1,46 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact | SparkLearn Academy</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SparkLearn Academy | Contact</title>
+  <meta name="description" content="Contact SparkLearn Academy for admissions, courses, and support.">
+  <meta name="keywords" content="contact SparkLearn Academy, phone, email, address, enquiry form">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<nav class="navbar">
-<div class="logo">
-<img src="images/logo.png" alt="Logo">
-<h2>Spark<span>Learn</span></h2>
-</div>
+  <div class="navbar">
+    <div class="logo">SparkLearn</div>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="courses.html">Courses</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html" class="active">Contact</a></li>
-</ul>
-</nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
 </header>
 
-<section>
-<h1>Contact Us</h1>
-
-<form>
-<input type="text" placeholder="Your Name" required>
-<input type="email" placeholder="Your Email" required>
-<textarea placeholder="Your Message" required></textarea>
-<button type="submit">Send Message</button>
-</form>
+<!-- ================= HERO ================= -->
+<section class="hero" style="height:40vh;">
+  <div class="hero-content">
+    <h1>Contact Us</h1>
+    <p>We are here to help you anytime</p>
+  </div>
 </section>
 
+<!-- ================= CONTACT DETAILS ================= -->
+<section>
+  <h2>Get In Touch</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>📍 Address</h3>
+      <p>SparkLearn Academy, Main Road, Andhra Pradesh, India</p>
+    </div>
+
+    <div class="card">
+      <h3>📞 Phone</h3>
+      <p>+91 989XX XXXXX</p>
+    </div>
+
+    <div class="card">
+      <h3>📧 Email</h3>
+      <p>info@sparklearn.com</p>
+    </div>
+
+    <div class="card">
+      <h3>⏰ Office Hours</h3>
+      <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CONTACT FORM ================= -->
+<section>
+  <h2>Send Us a Message</h2>
+
+  <form onsubmit="return validateContactForm()">
+
+    <input type="text" id="name" placeholder="Your Name" required>
+
+    <input type="email" id="email" placeholder="Your Email" required>
+
+    <input type="text" id="subject" placeholder="Subject" required>
+
+    <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+
+    <button type="submit">Send Message</button>
+
+  </form>
+</section>
+
+<!-- ================= MAP ================= -->
+<section>
+  <h2>Our Location</h2>
+
+  <div class="card">
+    <p>📌 Google Map Placeholder (Embed map can be added here)</p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-<p>© 2026 SparkLearn Academy</p>
+  <p>© 2026 SparkLearn Academy. All Rights Reserved.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
