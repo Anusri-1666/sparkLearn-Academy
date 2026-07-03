@@ -1,43 +1,89 @@
-<div class="card-container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SparkLearn Academy | Gallery</title>
+  <meta name="description" content="Explore SparkLearn Academy gallery including campus, faculty, classroom, and computer lab.">
+  <meta name="keywords" content="gallery, campus, faculty, classroom, computer lab, SparkLearn Academy">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <div class="navbar">
+    <div class="logo">SparkLearn</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a class="active" href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ================= HERO ================= -->
+<section class="hero" style="height:50vh;">
+  <div class="hero-content">
+    <h1>Our Gallery</h1>
+    <p>Take a look at our campus, faculty, and learning environment</p>
+  </div>
+</section>
+
+<!-- ================= GALLERY ================= -->
+<section>
+  <h2>Academy Photos</h2>
+
+  <div class="gallery">
+
+    <img src="images/campus.png" alt="Campus view of SparkLearn Academy">
+    
+    <img src="images/faculty.png" alt="Faculty teaching students">
+    
+    <img src="images/classroom.png" alt="Smart classroom with digital board">
+    
+    <img src="images/computer-lab.png" alt="Computer lab with systems">
+
+  </div>
+</section>
+
+<!-- ================= EXTRA SECTION ================= -->
+<section>
+  <h2>Learning Environment</h2>
+
+  <div class="card-container">
 
     <div class="card">
-        <img src="images/campus.png" alt="Main Campus">
-        <h3>Main Campus</h3>
+      <h3>Modern Campus</h3>
+      <p>Clean, safe, and student-friendly environment.</p>
     </div>
 
     <div class="card">
-        <img src="images/classroom.png" alt="Smart Classroom">
-        <h3>Smart Classroom</h3>
+      <h3>Interactive Learning</h3>
+      <p>Hands-on practice with real-time projects.</p>
     </div>
 
     <div class="card">
-        <img src="images/computer%20lab.png" alt="Computer Laboratory">
-        <h3>Computer Laboratory</h3>
+      <h3>Expert Guidance</h3>
+      <p>Support from experienced mentors.</p>
     </div>
 
-    <div class="card">
-        <img src="images/faculty.png" alt="Faculty Team">
-        <h3>Faculty Team</h3>
-    </div>
+  </div>
+</section>
 
-    <div class="card">
-        <img src="images/campus.png" alt="Academy Building">
-        <h3>Academy Building</h3>
-    </div>
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 SparkLearn Academy. All Rights Reserved.</p>
+</footer>
 
-    <div class="card">
-        <img src="images/classroom.png" alt="Interactive Classroom">
-        <h3>Interactive Classroom</h3>
-    </div>
-
-    <div class="card">
-        <img src="images/computer%20lab.png" alt="Programming Lab">
-        <h3>Programming Lab</h3>
-    </div>
-
-    <div class="card">
-        <img src="images/faculty.png" alt="Teaching Staff">
-        <h3>Teaching Staff</h3>
-    </div>
-
-</div>
+<script src="script.js"></script>
+</body>
+</html>
