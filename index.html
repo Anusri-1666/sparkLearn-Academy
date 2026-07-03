@@ -1,41 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SparkLearn Academy</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SparkLearn Academy | Home</title>
+  <meta name="description" content="SparkLearn Academy - Learn Full Stack, Python, Data Science, UI/UX Design with expert faculty and modern labs.">
+  <meta name="keywords" content="SparkLearn Academy, coding classes, Python, Data Science, Full Stack Development">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="logo-text">SparkLearn</div>
+<!-- ================= NAVBAR ================= -->
+<header>
+  <div class="navbar">
+    <div class="logo">SparkLearn</div>
 
-    <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="courses.html">Courses</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="register.html" class="btn">Register</a></li>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a class="active" href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
     </ul>
-</nav>
-
-<!-- HERO SECTION -->
-<header class="hero">
-    <div class="overlay"></div>
-
-    <div class="hero-content">
-        <img src="images/logo.png" alt="SparkLearn Logo" class="hero-logo">
-
-        <h1 class="tagline">Welcome to SparkLearn Academy</h1>
-        <p class="subtext">Learn. Build. Succeed.</p>
-
-        <a href="courses.html" class="hero-btn">Explore Courses</a>
-    </div>
+  </div>
 </header>
 
+<!-- ================= HERO ================= -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Welcome to SparkLearn Academy</h1>
+    <p>Build your future with modern skills, expert mentors, and practical learning.</p>
+    <a href="about.html" class="btn">Let's Start</a>
+  </div>
+</section>
+
+<!-- ================= INTRO ================= -->
+<section>
+  <h2>About Our Academy</h2>
+  <div class="card-container">
+    <div class="card">
+      <h3>Modern Learning</h3>
+      <p>We provide industry-based training with real-world projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>Expert Faculty</h3>
+      <p>Learn from experienced developers and certified trainers.</p>
+    </div>
+
+    <div class="card">
+      <h3>Career Growth</h3>
+      <p>We help students get placed in top IT companies.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= POPULAR COURSES ================= -->
+<section>
+  <h2>Popular Courses</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Full Stack Development</h3>
+      <p>HTML, CSS, JS, React, Node.js</p>
+    </div>
+
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p>Basics to Advanced Python with projects</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Science</h3>
+      <p>AI, ML, Data Analysis, Python libraries</p>
+    </div>
+
+    <div class="card">
+      <h3>UI/UX Design</h3>
+      <p>Figma, Adobe XD, Design Principles</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ANNOUNCEMENTS ================= -->
+<section>
+  <h2>Announcements</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <p>📢 New batch starting from next Monday</p>
+    </div>
+
+    <div class="card">
+      <p>📢 Free webinar on Web Development this weekend</p>
+    </div>
+
+    <div class="card">
+      <p>📢 Scholarship test registration is open</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+<section>
+  <h2>Why Choose Us?</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>✔ Practical Training</h3>
+    </div>
+
+    <div class="card">
+      <h3>✔ Industry Projects</h3>
+    </div>
+
+    <div class="card">
+      <h3>✔ Placement Support</h3>
+    </div>
+
+    <div class="card">
+      <h3>✔ Certification</h3>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <h2>Our Achievements</h2>
+
+  <div class="stats-container">
+    <div class="stat-box">
+      <h3>500+</h3>
+      <p>Students</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>50+</h3>
+      <p>Courses</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>100+</h3>
+      <p>Placements</p>
+    </div>
+
+    <div class="stat-box">
+      <h3>10+</h3>
+      <p>Years Experience</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <p>© 2026 SparkLearn Academy. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
