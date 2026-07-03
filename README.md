@@ -1,4 +1,4 @@
-# 🚀 SparkLearn Academy Website
+# SparkLearn Academy Website
 
 A fully responsive multi-page educational website built using **HTML, CSS, and JavaScript** for academic submission.
 
