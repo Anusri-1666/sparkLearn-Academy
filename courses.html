@@ -1,63 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Courses | SparkLearn Academy</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SparkLearn Academy | Courses</title>
+  <meta name="description" content="Explore professional courses at SparkLearn Academy including Full Stack, Python, Data Science, and UI/UX Design.">
+  <meta name="keywords" content="courses, Full Stack Development, Python, Data Science, UI UX Design, certification">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<nav class="navbar">
-<div class="logo">
-<img src="images/logo.png" alt="Logo">
-<h2>Spark<span>Learn</span></h2>
-</div>
+  <div class="navbar">
+    <div class="logo">SparkLearn</div>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="courses.html" class="active">Courses</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a class="active" href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
 </header>
 
-<section>
-<h1>Our Courses</h1>
-
-<div class="card-container">
-
-<div class="card">
-<h3>Full Stack Development</h3>
-<p>HTML, CSS, JS, React, Node.js, MongoDB</p>
-</div>
-
-<div class="card">
-<h3>Python Programming</h3>
-<p>Basics, OOP, Projects, Automation</p>
-</div>
-
-<div class="card">
-<h3>Data Science</h3>
-<p>ML, AI, Data Analysis, Visualization</p>
-</div>
-
-<div class="card">
-<h3>UI/UX Design</h3>
-<p>Figma, Design Principles, Prototyping</p>
-</div>
-
-</div>
+<!-- ================= HERO ================= -->
+<section class="hero" style="height:50vh;">
+  <div class="hero-content">
+    <h1>Our Courses</h1>
+    <p>Learn job-ready skills with industry-focused training</p>
+  </div>
 </section>
 
+<!-- ================= COURSES ================= -->
+<section>
+  <h2>Available Programs</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>Full Stack Development</h3>
+      <p><strong>Duration:</strong> 6 Months</p>
+      <p>HTML, CSS, JavaScript, React, Node.js, MongoDB</p>
+      <p>✔ Hands-on projects</p>
+      <p>✔ Real-world applications</p>
+      <p>✔ Certification included</p>
+    </div>
+
+    <div class="card">
+      <h3>Python Programming</h3>
+      <p><strong>Duration:</strong> 3 Months</p>
+      <p>Basics, OOP, File Handling, APIs, Projects</p>
+      <p>✔ Beginner to advanced</p>
+      <p>✔ Mini projects</p>
+      <p>✔ Certification included</p>
+    </div>
+
+    <div class="card">
+      <h3>Data Science</h3>
+      <p><strong>Duration:</strong> 6 Months</p>
+      <p>Python, Pandas, NumPy, ML, AI basics</p>
+      <p>✔ Data analysis projects</p>
+      <p>✔ Real datasets</p>
+      <p>✔ Certification included</p>
+    </div>
+
+    <div class="card">
+      <h3>UI/UX Design</h3>
+      <p><strong>Duration:</strong> 3 Months</p>
+      <p>Figma, Adobe XD, Wireframing, Prototyping</p>
+      <p>✔ Design portfolio</p>
+      <p>✔ Creative projects</p>
+      <p>✔ Certification included</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= HIGHLIGHTS ================= -->
+<section>
+  <h2>Course Highlights</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>🎯 Practical Learning</h3>
+      <p>Focus on real-world applications and projects.</p>
+    </div>
+
+    <div class="card">
+      <h3>📘 Study Materials</h3>
+      <p>Free notes, PDFs, and recorded sessions.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧪 Monthly Exams</h3>
+      <p>Evaluate your progress regularly with tests.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏆 Certification</h3>
+      <p>Industry-recognized certificates after completion.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= ANNOUNCEMENTS ================= -->
+<section>
+  <h2>Latest Announcements</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <p>📢 New Python batch starts next week</p>
+    </div>
+
+    <div class="card">
+      <p>📢 Data Science weekend workshop open</p>
+    </div>
+
+    <div class="card">
+      <p>📢 UI/UX design contest registration live</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-<p>© 2026 SparkLearn Academy</p>
+  <p>© 2026 SparkLearn Academy. All Rights Reserved.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
