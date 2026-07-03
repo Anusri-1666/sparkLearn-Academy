@@ -1,43 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About | SparkLearn Academy</title>
-<link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>SparkLearn Academy | About</title>
+  <meta name="description" content="Learn about SparkLearn Academy - history, mission, vision, faculty, labs, and campus facilities.">
+  <meta name="keywords" content="about SparkLearn Academy, mission, vision, faculty, computer lab, smart classroom">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-<nav class="navbar">
-<div class="logo">
-<img src="images/logo.png" alt="Logo">
-<h2>Spark<span>Learn</span></h2>
-</div>
+  <div class="navbar">
+    <div class="logo">SparkLearn</div>
 
-<ul class="nav-links">
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html" class="active">About</a></li>
-<li><a href="courses.html">Courses</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="register.html">Register</a></li>
+    </ul>
+  </div>
 </header>
 
-<section>
-<h1>About Us</h1>
-<p>
-SparkLearn Academy is a modern education platform focused on practical learning,
-skill development, and career growth. We bridge the gap between education and industry needs.
-</p>
+<!-- ================= HERO ================= -->
+<section class="hero" style="height:60vh;">
+  <div class="hero-content">
+    <h1>About SparkLearn Academy</h1>
+    <p>Empowering students with modern technology education</p>
+  </div>
 </section>
 
+<!-- ================= HISTORY ================= -->
+<section>
+  <h2>Our History</h2>
+  <div class="card">
+    <p>
+      SparkLearn Academy was founded with a mission to provide high-quality technical education
+      to students and help them build successful careers in IT and software development.
+    </p>
+  </div>
+</section>
+
+<!-- ================= MISSION / VISION ================= -->
+<section>
+  <h2>Mission & Vision</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <h3>Mission</h3>
+      <p>To deliver practical and industry-focused learning to every student.</p>
+    </div>
+
+    <div class="card">
+      <h3>Vision</h3>
+      <p>To become a leading academy for technology education and innovation.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OBJECTIVES ================= -->
+<section>
+  <h2>Our Objectives</h2>
+
+  <div class="card-container">
+    <div class="card">
+      <p>✔ Provide quality education</p>
+    </div>
+
+    <div class="card">
+      <p>✔ Improve technical skills</p>
+    </div>
+
+    <div class="card">
+      <p>✔ Ensure student placements</p>
+    </div>
+
+    <div class="card">
+      <p>✔ Build industry readiness</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FACILITIES ================= -->
+<section>
+  <h2>Facilities</h2>
+
+  <div class="card-container">
+
+    <div class="card">
+      <h3>👨‍🏫 Faculty</h3>
+      <p>Experienced trainers with industry knowledge.</p>
+    </div>
+
+    <div class="card">
+      <h3>💻 Computer Lab</h3>
+      <p>Fully equipped systems with latest software tools.</p>
+    </div>
+
+    <div class="card">
+      <h3>🏫 Campus</h3>
+      <p>Modern infrastructure with a comfortable learning environment.</p>
+    </div>
+
+    <div class="card">
+      <h3>📚 Smart Classroom</h3>
+      <p>Digital boards and interactive learning setup.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= PLACEMENT ================= -->
+<section>
+  <h2>Placement Support</h2>
+  <div class="card">
+    <p>
+      We provide resume building, interview training, mock tests, and job placement assistance
+      to help students secure jobs in top companies.
+    </p>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
 <footer>
-<p>© 2026 SparkLearn Academy</p>
+  <p>© 2026 SparkLearn Academy. All Rights Reserved.</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
