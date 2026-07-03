@@ -1,164 +1,100 @@
-# 🎓 SparkLearn Academy
+# 🚀 SparkLearn Academy Website
 
-A modern, responsive educational website developed using **HTML5**, **CSS3**, and **JavaScript**. This project was created as part of a frontend web development assignment to demonstrate responsive design, basic SEO, JavaScript interactivity, and website deployment.
-
----
-
-## 📌 Project Overview
-
-SparkLearn Academy is a fictional online learning platform that provides information about the academy, its courses, campus, faculty, and admission process. The website features a clean design, responsive layout, and user-friendly navigation.
+A fully responsive multi-page educational website built using **HTML, CSS, and JavaScript** for academic submission.
 
 ---
 
-## ✨ Features
+## 📌 Project Description
 
-- 🏠 Home Page
-- ℹ️ About Page
-- 📚 Courses Page
-- 🖼️ Gallery Page
-- 📞 Contact Page
-- 🔐 Student Login Page
-- 📝 Student Registration Page
-- 📱 Fully Responsive Design
-- ✔️ JavaScript Form Validation
-- 🔍 Basic SEO Optimization
-- 🎨 Modern UI with Consistent Color Theme
+SparkLearn Academy is a modern learning platform website that provides information about courses, faculty, campus, and student registration.
+
+This project demonstrates:
+- Multi-page website structure
+- Responsive design
+- Form validation using JavaScript
+- UI/UX layout design
+- Navigation system
 
 ---
 
-## 🛠️ Technologies Used
+## 🧑‍💻 Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript
-- Visual Studio Code
-- GitHub
-- Netlify
+- JavaScript (Vanilla JS)
 
 ---
 
 ## 📂 Project Structure
-
-```text
 sparklearn-academy/
-│
 ├── index.html
 ├── about.html
 ├── courses.html
 ├── gallery.html
 ├── contact.html
-├── login.html
 ├── register.html
-│
-├── css/
-│   └── style.css
-│
-├── js/
-│   └── script.js
-│
-├── images/
-│   ├── logo.png
-│   ├── hero-banner.jpg
-│   ├── campus.jpg
-│   ├── classroom.jpg
-│   ├── computer-lab.jpg
-│   └── faculty.jpg
-│
-└── README.md
-```
+├── style.css
+├── script.js
+├── README.md
+└── images/
+   ├── logo.png
+    ├── hero-banner.png
+    ├── campus.png
+    ├── classroom.png
+    ├── computer-lab.png
+    └── faculty.png
+---
+
+## ✨ Features
+
+✔ Responsive design (mobile + desktop)  
+✔ Navigation bar on all pages  
+✔ Hero section with banner  
+✔ Course listing pages  
+✔ Image gallery with hover effect  
+✔ Contact form with validation  
+✔ Student registration form  
+✔ JavaScript interactivity  
+✔ Back-to-top button  
+✔ Scroll animations  
 
 ---
 
-## 📄 Website Pages
+## 🌐 How to Run
 
-- Home
-- About
-- Courses
-- Gallery
-- Contact
-- Login
-- Register
+1. Download or clone the repository  
+2. Keep all files in one folder  
+3. Open `index.html` in any browser  
 
 ---
 
-## 📱 Responsive Design
+## 🚀 Deployment (Netlify)
 
-The website is optimized for:
-
-- 💻 Desktop
-- 📱 Tablet
-- 📲 Mobile
+1. Go to https://www.netlify.com  
+2. Drag and drop project folder  
+3. Your website will be live instantly  
 
 ---
 
-## 🔍 SEO Features
+## 📸 Images Required
 
-- Unique `<title>` tag on every page
-- Meta description and keywords
-- Proper heading hierarchy (`H1`, `H2`, `H3`)
-- Meaningful image `alt` attributes
-- Clean and simple file names
-- Internal navigation links
+Place these inside `/images` folder:
 
----
-
-## ⚡ JavaScript Features
-
-- Contact Form Validation
-- Login Form Validation
-- Registration Form Validation
-- User Success Alert Messages
+- hero-banner.png  
+- campus.png  
+- classroom.png  
+- computer-lab.png  
+- faculty.png  
+- logo.png  
 
 ---
 
-## 🖼️ Images Used
+## 👨‍🎓 Author
 
-The project uses the following custom images:
-
-- `logo.png`
-- `hero-banner.jpg`
-- `campus.jpg`
-- `classroom.jpg`
-- `computer-lab.jpg`
-- `faculty.jpg`
-
-These images are reused across multiple pages to maintain a consistent design and reduce project size.
+SparkLearn Academy Project (Student Assignment)
 
 ---
 
-## 🎯 Project Objective
+## 📄 License
 
-The objective of this project is to design and develop a responsive educational website that demonstrates:
-
-- Frontend web development
-- Responsive web design
-- Basic SEO practices
-- JavaScript interactivity
-- GitHub version control
-- Netlify deployment
-
----
-
-## 👨‍💻 Developed By
-
-**Student Name:** A.Anusri
-
-**Registration / Roll Number:** 1666
-
-**Project Title:** SparkLearn Academy
-
-**Subject:** Frontend Web Development
-
-**Submission Date:** 2 July 2026
-
----
-
-## 📄 Disclaimer
-
-This website is a fictional educational project created solely for academic purposes. Any names, images, or information used are for demonstration only and do not represent a real institution.
-
----
-
-## ⭐ Thank You
-
-Thank you for visiting **SparkLearn Academy**!
+This project is for educational purposes only.
